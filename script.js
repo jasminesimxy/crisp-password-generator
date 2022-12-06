@@ -18,7 +18,12 @@ var specialChar= ";//"!\"#$%&'()*+,-./:;<=>?@[]^_`{}~";
 function writePassword() {
    var passwordLength = prompt("Your password must be within the range of 8-128 characters. How many characters would you like your password to be ? ");
 
-   
+   // if user enter length < 8, alert ..
+   if (passwordLength < 8) {
+    alert("Ooops.Please enter a password more than 7 characters");
+    return
+   }
+
 
 
 
