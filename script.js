@@ -34,8 +34,7 @@ for (var i =0; i < passwordLength; i++) {
   var randomIndex = Math.floor(Math.random() * choiceArray.length)
   password = password + choiceArray[randomIndex];
 }
-
-
+return password;
 
 
 }
