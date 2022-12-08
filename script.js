@@ -18,7 +18,7 @@ function writePassword() {
    var passwordText = document.querySelector("#password");
 
    if (bingoPrompts) {
-    var updatedpassword = generatePassword();
+    var updatedPassword = generatePassword();
     passwordText.value = updatedPassword;
    } else {
     passwordText.value = "";
