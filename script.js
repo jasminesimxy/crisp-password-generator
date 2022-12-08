@@ -15,19 +15,20 @@ generateBtn.addEventListener("click", writePassword);
 // Write password to the #password input
 function writePassword() {
    var bingoPrompts = getPrompts // can be true or false 
+   var passwordText = document.querySelector("#password");
 
    if (bingoPrompts) {
-    var password = generatePassword();
-    var passwordText = document.querySelector("#password");
-    
-    passwordText.value = password;
-
+    var updatedpassword = generatePassword();
+    passwordText.value = updatedPassword;
    }
-  
+
+   else (
+    passwordText.value = " ";
+   )
 }
  
+// I would generatePasswords based on the prompts
 function generatePassword() {
-// i would generatePasswords based on the prompts
 
 var password = "" ; // empty string
 for (var i =0; i < passwordLength; i++) {
@@ -36,8 +37,8 @@ for (var i =0; i < passwordLength; i++) {
 }
 return password;
 
-
 }
+
 
 
 
